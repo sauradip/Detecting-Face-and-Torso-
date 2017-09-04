@@ -11,3 +11,10 @@ a. Face and Body Detected :  For this case we have no issue we will move to next
 b.Face Detected but Body not Detected: For this we consulted a paper where it was mentioned height of body upto thighs is 7 times the height of face , so we expanded the face downwards towards opposite boundary upto 7*height of face length
 c.Face not Detected but Body Detected: Same as above we will move the body upwards towards opposite boundary until my total height is total height / 7
 d.Face and Body not Detected: Here we use Boundary Growing Method of detecting Undetected face and then expanding towards down boundary to get the undetected body
+
+
+Steps to Run :
+
+1. Run first torso_face_Combo.m
+2.Then Run ConnectingHeadAndBody.m for potraying the 4 cases above
+3. Run isi.py to extract specifically Point (d)
